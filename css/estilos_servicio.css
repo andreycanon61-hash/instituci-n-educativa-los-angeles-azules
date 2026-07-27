@@ -1,0 +1,298 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(to right, rgb(255, 255, 255) 18%, rgb(106,173,240));
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100vh significa el 100% de la altura de la ventana */
+    margin: 0;
+}
+
+body {
+    max-width: 1510px;   /* Define el ancho máximo de tu sitio */
+    margin: 0 auto;      /* Centra el bloque en la pantalla */
+    padding: 0 20px;     /* Asegura un margen interno en pantallas pequeñas */
+}
+
+main {
+    flex: 1; /* Esto hace que el main ocupe todo el espacio disponible */
+}
+
+footer {
+    background-color: #333; /* O el color que prefieras */
+    color: white;
+    text-align: left;
+    padding: 40px 20px;
+    margin-top: auto; /* Esto empuja al footer al fondo si el contenido es corto */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Distribuye las 3 columnas equitativamente */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px; /* Espacio entre columnas */
+}
+
+.footer-column {
+    flex: 1; /* Hace que todas las columnas tengan el mismo ancho */
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffcc00; /* Detalle decorativo amarillo */
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    line-height: 2;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-column p {
+    color: #cccccc;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.logo {
+    position: relative;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+header {
+    background: linear-gradient(to right, rgb(255, 255, 255) 18%, rgb(106,173,240));
+    position: sticky; /* Hacemos que el header completo (con el menú dentro) sea sticky */
+    top: 0;
+    z-index: 1000;
+}
+
+
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    justify-content: center; /* Centra los botones en el nav */
+    padding: 10px 0;
+    margin: 0; /* Limpia márgenes antiguos */
+}
+.menu > li {
+    position: relative; /* Necesario para que el submenú se posicione bajo el padre */
+}
+
+.menu > li > a {
+     display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    /* Mantenemos tus tamaños intactos */
+    /* Asegúrate de que estos valores coincidan con los que ya tenías */
+    width: 188px; 
+    height: 60px; 
+
+    /* Limpieza total para evitar que el texto se mueva */
+    padding: 0 10px !important; /* Padding lateral, pero CERO arriba y abajo */
+    margin: 0 !important;
+    line-height: normal !important; /* Esto evita que el interlineado empuje el texto hacia arriba */
+    text-align: center;
+    
+    /* Diseño */
+    background-color: #ffc800;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    box-sizing: border-box;
+    transition: background 0.3s;
+}
+
+.menu > li > a:hover {
+    background-color: #000000; /* Un tono más oscuro al pasar el mouse */
+    color: #ffffff;
+}
+
+.submenu {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #035fea;
+    list-style: none;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.menu > li:hover .submenu {
+    display: block; /* Aparece solo al hacer hover sobre el elemento padre */
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 5px 0;
+}
+
+.menu {
+    margin-left: 260px;
+    margin-top: -80px;
+}
+
+.header{
+    align-items: center;
+    background-color: #035fea; /* Ajusta este color al fondo que desees */
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 15px; /* Espaciado uniforme entre los botones */
+    align-items: center;
+}
+
+/* Estilos para las nuevas secciones y multimedia */
+main section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.multimedia-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.media-box {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.media-box h3 {
+    margin-bottom: 10px;
+    color: #035fea;
+}
+
+audio, video {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Contenedor padre para el diseño de 2 columnas */
+.section-wrapper {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el texto y la imagen */
+    justify-content: space-between;
+    gap: 40px; /* Espacio entre texto e imagen */
+    margin-bottom: 50px;
+    padding: 30px;
+    background: #f9f9f9;
+    border-radius: 12px;
+}
+
+/* El texto toma el espacio necesario */
+.text-content {
+    flex: 2; /* Ocupa el doble de espacio que la imagen */
+}
+
+/* Ajuste de las imágenes */
+.side-image {
+    flex: 1;
+    width: 100%;
+    max-width: 350px; /* Tamaño máximo deseado */
+    height: 250px;
+    object-fit: cover; /* Mantiene la proporción sin estirarse */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .section-wrapper {
+        flex-direction: column; /* Apila imagen arriba y texto abajo */
+        text-align: center;
+    }
+    
+    .side-image {
+        max-width: 100%;
+    }
+}
+
+.side-image {
+    flex: 0 0 250px; /* Tamaño fijo para que no se deforme */
+    width: 250px;    /* Ancho */
+    height: 250px;   /* Alto (igual al ancho para formar el cuadrado) */
+    object-fit: cover; /* Recorta la imagen para que llene el cuadrado sin estirarse */
+    border-radius: 12px; /* Bordes redondeados como en tu imagen de referencia */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Aseguramos que el contenedor mantenga el orden horizontal */
+.section-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.section-wrapper {
+    padding: 20px 0; /* Espacio extra entre cada servicio */
+    border-bottom: 3px solid #035fea; /* Línea divisoria suave */
+}
+
+/* Opcional: Si quieres que el último no tenga línea */
+.section-wrapper:last-child {
+    border-bottom: none;
+}
+
+.section-wrapper {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Define la velocidad y suavidad del efecto */
+    cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+}
+
+/* Efecto al pasar el mouse */
+.section-wrapper:hover {
+    transform: scale(1.03); /* Aumenta el tamaño un 3% al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Intensifica la sombra para dar profundidad */
+    z-index: 10; /* Asegura que el elemento resaltado se vea por encima de otros */
+}
+
+table, th, tr, td{
+    border: 1px solid black;
+}
+
+table {
+    margin: 20px;
+}

@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(to right, rgb(255, 255, 255) 18%, rgb(106,173,240));
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100vh significa el 100% de la altura de la ventana */
+    margin: 0;
+}
+
+body {
+    max-width: 1510px;   /* Define el ancho máximo de tu sitio */
+    margin: 0 auto;      /* Centra el bloque en la pantalla */
+    padding: 0 20px;     /* Asegura un margen interno en pantallas pequeñas */
+}
+
+main {
+    flex: 1; /* Esto hace que el main ocupe todo el espacio disponible */
+}
+
+footer {
+    background-color: #333; /* O el color que prefieras */
+    color: white;
+    text-align: left;
+    padding: 40px 20px;
+    margin-top: auto; /* Esto empuja al footer al fondo si el contenido es corto */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Distribuye las 3 columnas equitativamente */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px; /* Espacio entre columnas */
+}
+
+.footer-column {
+    flex: 1; /* Hace que todas las columnas tengan el mismo ancho */
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffcc00; /* Detalle decorativo amarillo */
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    line-height: 2;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-column p {
+    color: #cccccc;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.logo {
+    position: relative;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+header {
+    background: linear-gradient(to right, rgb(255, 255, 255) 18%, rgb(106,173,240));
+    position: sticky; /* Hacemos que el header completo (con el menú dentro) sea sticky */
+    top: 0;
+    z-index: 1000;
+}
+
+
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    justify-content: center; /* Centra los botones en el nav */
+    padding: 10px 0;
+    margin: 0; /* Limpia márgenes antiguos */
+}
+.menu > li {
+    position: relative; /* Necesario para que el submenú se posicione bajo el padre */
+}
+
+.menu > li > a {
+     display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    /* Mantenemos tus tamaños intactos */
+    /* Asegúrate de que estos valores coincidan con los que ya tenías */
+    width: 188px; 
+    height: 60px; 
+
+    /* Limpieza total para evitar que el texto se mueva */
+    padding: 0 10px !important; /* Padding lateral, pero CERO arriba y abajo */
+    margin: 0 !important;
+    line-height: normal !important; /* Esto evita que el interlineado empuje el texto hacia arriba */
+    text-align: center;
+    
+    /* Diseño */
+    background-color: #ffc800;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    box-sizing: border-box;
+    transition: background 0.3s;
+}
+
+.menu > li > a:hover {
+    background-color: #000000; /* Un tono más oscuro al pasar el mouse */
+    color: #ffffff;
+}
+
+.submenu {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #035fea;
+    list-style: none;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.menu > li:hover .submenu {
+    display: block; /* Aparece solo al hacer hover sobre el elemento padre */
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 5px 0;
+}
+
+.menu {
+    margin-left: 260px;
+    margin-top: -80px;
+}
+
+.header{
+    align-items: center;
+    background-color: #035fea; /* Ajusta este color al fondo que desees */
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 15px; /* Espaciado uniforme entre los botones */
+    align-items: center;
+}
+
+.tarjetas {
+    display: flex;          
+    justify-content: space-between; 
+    gap: 20px;              
+    padding: 20px;
+    align-items: stretch; /* Esto hace que todas las tarjetas tengan la misma altura */
+}
+
+.tarjeta {
+    background: #f4f4f4;    
+    border: 1px solid #ccc;
+    border-radius: 10px;    
+    padding: 15px;
+    width: 30%;             
+    text-align: center;
+    transition: transform 0.3s;
+    
+    /* Configuración para que el botón se quede siempre abajo */
+    display: flex;
+    flex-direction: column;
+}
+
+.tarjeta img {
+    width: 100%;            
+    height: 200px;          
+    object-fit: cover;      /* Esto hace que todas las fotos se vean del mismo tamaño sin deformarse */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.ver-mas a, button{
+    margin-top: auto;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px); 
+}
+
+/* Forzar la disposición horizontal */
+.metodologia-container {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 30px !important;
+    align-items: center !important;
+    margin-top: 20px !important;
+}
+
+.metodologia-container img {
+    width: 350px !important;
+    height: auto !important;
+    flex-shrink: 0 !important;
+    border-radius: 8px !important;
+}
+
+/* Asegurar que el texto ocupe el espacio restante */
+.metodologia-container p {
+    flex: 1 !important;
+    margin: 0 !important;
+    line-height: 1.6;
+}
+
+/* Añade esto para separar la sección de metodología del resto */
+section:has(img[alt="Metodologia del colgio"]) {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+    padding: 20px !important;
+}
+
+/* Separa el título de la metodología del párrafo y la imagen */
+section:has(img[alt="Metodologia del colgio"]) h2 {
+    margin-bottom: 30px !important;
+}
+
+/* Agrega un margen a la derecha de la imagen para que el texto no esté pegado */
+img[alt="Metodologia del colgio"] {
+    margin-right: 40px !important;
+}
+
+P {
+    
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #000;
+}

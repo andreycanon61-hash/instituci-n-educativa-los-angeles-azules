@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/estilos_index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>    
+        <h1 class="h1">Colegio Nuevo Horizonte</h1>
+        <div class="header">
+            <img src="img/logo_chn.png" class="logo" width="100" alt="logo">
+        </div>
+
+        <nav>
+        <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+             
+
+        <li>
+             <a href="nosotros.html">Nosotros &#9662;</a>
+             <ul class="submenu">
+                <li><a href="nosotros.html#historia">Historia</a></li>
+                <li><a href="nosotros.html#visión">Visión</a></li>
+                <li><a href="nosotros.html#misión">Misión</a></li>
+                <li><a href="nosotros.html#perfil">Perfil</a></li>
+                <li><a href="nosotros.html#instalaciónes">Instalaciones</a></li>
+             </ul>
+        </li>
+
+        <li>
+             <a href="programas_academicos.html">Programas Academicos &#9662;</a>
+             <ul class="submenu">
+                <li>
+                    <a href="preeescolar.html">Preescolar</a>
+                </li>
+                <li>
+                   <a href="primaria.html">Primaria</a>
+                </li>
+                <li>
+                    <a href="bachillerato.html">Bachillrato</a>
+                </li>
+             </ul>
+            </li>
+            
+        <li><a href="servicios.html">Servicios </a></li>
+             
+
+        <li><a href="noticias.html">Noticias </a></li>
+
+        <li><a  href="contacto.html">Contacto </a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <section class="home-section">
+    <div class="content-text">
+        <h2>Bienvenidos a la excelencia educativa</h2>
+        <p>Formando los líderes del mañana en un entorno de aprendizaje integral.</p>
+        <p>En el Colegio Nuevo Horizonte, nuestra misión es brindar una educación de alta calidad...</p>
+        <div class="botones">
+            <button onclick="window.location.href='nosotros.html'">Conoce más</button>
+            <button onclick="window.location.href='programas_academicos.html'">Ver programas</button>
+        </div>
+    </div>
+    
+    <div class="content-image">
+        <img src="img/fachada_cnh.jpeg" alt="Fachada_del_colegio">
+    </div>
+</section>
+
+<section class="seccion-destacada">
+    <h2 style="display:none;">Noticias destacadas</h2>
+    <article class="tarjeta-noticia">
+        <div class="noticia-imagen">
+            <img src="img/noticia-destacados.jpeg" alt="estudiantes destacados">
+        </div>
+        <div class="noticia-contenido">
+            <h3>Nuestros estudiantes destacados</h3>
+            <p>Reconocemos el esfuerzo y compromiso de los alumnos que sobresalieron en las olimpiadas académicas de este año. Su dedicación es un orgullo para toda nuestra comunidad educativa.</p>
+            <a href="noticias.html" class="btn-leer-mas">Leer más</a>
+        </div>
+    </article>
+</section>
+
+<section class="features-bar">
+    <h2 style="display:none;">Por qué elegirnos</h2>
+    <div class="feature-item">
+        <i class="fas fa-book"></i>
+        <p>Educación de alta calidad</p>
+    </div>
+    <div class="feature-item">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <p>Personal docente experto</p>
+    </div>
+    <div class="feature-item">
+        <i class="fas fa-building"></i>
+        <p>Instalaciones de vanguardia</p>
+    </div>
+    <div class="feature-item">
+        <i class="fas fa-heart"></i>
+        <p>Formación en valores</p>
+    </div>
+</section>
+
+<section class="ofertas">
+    <h2>Ofertas Academicas</h2>
+    <div class="tarjetas">
+        <div class="tarjeta">
+        <img src="img/preescolar.png" alt="imagen de preescolar">
+        <p>Enfoque en el desarrollo integral, la creatividad y los primeros aprendizajes en un ambiente seguro y estimulante.</p> 
+        <button class="ver-mas" onclick="window.location.href='preeescolar.html'">Ver Mas</button>
+        </div>
+
+        <div class="tarjeta">
+        <img src="img/primaria.jpeg" alt="imagen de primaria">
+        <p>Fortalecimiento de competencias básicas, pensamiento crítico y valores ciudadanos desde un modelo pedagógico activo.</p> 
+        <button class="ver-mas" onclick="window.location.href='primaria.html'">Ver Mas</button>
+        </div>
+
+        <div class="tarjeta">
+        <img src="img/bachillerato.jpeg" alt="imagen de bachillerato">
+        <p>Preparación para el futuro con énfasis académico, orientación vocacional y desarrollo de habilidades de liderazgo.</p> 
+        <button class="ver-mas" onclick="window.location.href='bachillerato.html'">Ver Mas</button>
+        </div>
+    </div>
+</section>
+
+<section class="actualidad-container">
+    <h2>Actualidad</h2>
+    <div class="news-list">
+        <div class="news-item">
+            <div class="news-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="news-text">
+                <h3>Convocatoria de Becas 2026</h3>
+                <p>Iniciamos el proceso de postulación para becas académicas. Revisa los requisitos en secretaría.</p>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="news-icon"><i class="fas fa-flask"></i></div>
+            <div class="news-text">
+                <h3>Feria de Ciencias y Tecnología</h3>
+                <p>Este viernes presentaremos los proyectos innovadores desarrollados por nuestros estudiantes.</p>
+            </div>
+        </div>
+        <div class="news-item">
+            <div class="news-icon"><i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="news-text">
+                <h3>Jornada de Puertas Abiertas</h3>
+                <p>Conoce nuestra metodología. Te esperamos el 15 de julio para un recorrido guiado.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Información de Contacto</h2>
+    <table style="width:100%; border-collapse: collapse; text-align: center; margin-top: 20px; border: 1px solid black;">
+      <tr style="background-color: #00a4f0; color: white;">
+        <th colspan="2">Información de Contacto General</th>
+      </tr>
+      <tr>
+        <td>Dirección</td>
+        <td>Calle 123 # 45-67, Tunja</td>
+      </tr>
+      <tr>
+        <td>Atención al público</td>
+        <td>Lunes a Viernes (7:00 AM - 3:00 PM)</td>
+      </tr>
+    </table>
+</section>
+    </main>
+
+<footer>
+    <div class="footer-container">
+        <!-- Columna 1: Información Institucional -->
+        <div class="footer-column">
+            <h3>Sobre el Colegio</h3>
+            <p>El Colegio Nuevo Horizonte brinda una educación de excelencia, formando líderes con valores y visión global.</p>
+        </div>
+
+        <!-- Columna 2: Enlaces Rápidos -->
+        <div class="footer-column">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+                <li><a href="nosotros.html">Nuestra Historia</a></li>
+                <li><a href="servicios.html">Servicios Educativos</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </div>
+
+        <!-- Columna 3: Contacto -->
+        <div class="footer-column">
+            <h3>Contacto</h3>
+            <p>Dirección: Calle 123 # 45-67, Tunja</p>
+            <p>Email: info@colegionuevohorizonte.edu</p>
+            <p>Tel: (608) 123 4567</p>
+        </div>
+
+        <!-- Columna 4: Redes Sociales -->
+        <div class="footer-column">
+            <h3>Síguenos</h3>
+            <ul class="redes-sociales">
+                <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

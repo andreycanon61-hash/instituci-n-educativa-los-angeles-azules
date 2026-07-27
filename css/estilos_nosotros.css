@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(to right, rgb(255, 255, 255) 18%, rgb(106,173,240));
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 100vh significa el 100% de la altura de la ventana */
+    margin: 0;
+}
+
+body {
+    max-width: 1510px;   /* Define el ancho máximo de tu sitio */
+    margin: 0 auto;      /* Centra el bloque en la pantalla */
+    padding: 0 20px;     /* Asegura un margen interno en pantallas pequeñas */
+}
+
+main {
+    flex: 1; /* Esto hace que el main ocupe todo el espacio disponible */
+}
+
+footer {
+    background-color: #333; /* O el color que prefieras */
+    color: white;
+    text-align: left;
+    padding: 40px 20px;
+    margin-top: auto; /* Esto empuja al footer al fondo si el contenido es corto */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Distribuye las 3 columnas equitativamente */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px; /* Espacio entre columnas */
+}
+
+.footer-column {
+    flex: 1; /* Hace que todas las columnas tengan el mismo ancho */
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffcc00; /* Detalle decorativo amarillo */
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    line-height: 2;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+}
+
+.footer-column p {
+    color: #cccccc;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.logo {
+    position: relative;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+header {
+    background: linear-gradient(to right, rgb(255, 255, 255) 18%, rgb(106,173,240));
+    position: sticky; /* Hacemos que el header completo (con el menú dentro) sea sticky */
+    top: 0;
+    z-index: 1000;
+}
+
+
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+    justify-content: center; /* Centra los botones en el nav */
+    padding: 10px 0;
+    margin: 0; /* Limpia márgenes antiguos */
+}
+.menu > li {
+    position: relative; /* Necesario para que el submenú se posicione bajo el padre */
+}
+
+.menu > li > a {
+     display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    /* Mantenemos tus tamaños intactos */
+    /* Asegúrate de que estos valores coincidan con los que ya tenías */
+    width: 188px; 
+    height: 60px; 
+
+    /* Limpieza total para evitar que el texto se mueva */
+    padding: 0 10px !important; /* Padding lateral, pero CERO arriba y abajo */
+    margin: 0 !important;
+    line-height: normal !important; /* Esto evita que el interlineado empuje el texto hacia arriba */
+    text-align: center;
+    
+    /* Diseño */
+    background-color: #ffc800;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    box-sizing: border-box;
+    transition: background 0.3s;
+}
+
+.menu > li > a:hover {
+    background-color: #000000; /* Un tono más oscuro al pasar el mouse */
+    color: #ffffff;
+}
+
+.submenu {
+    display: none; /* Oculto por defecto */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #035fea;
+    list-style: none;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.menu > li:hover .submenu {
+    display: block; /* Aparece solo al hacer hover sobre el elemento padre */
+}
+
+.submenu li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 5px 0;
+}
+
+.menu {
+    margin-left: 260px;
+    margin-top: -80px;
+}
+
+.header{
+    align-items: center;
+    background-color: #035fea; /* Ajusta este color al fondo que desees */
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 15px; /* Espaciado uniforme entre los botones */
+    align-items: center;
+}
+
+.quienes-somos {
+    display: flex;
+    align-items: center; /* Alinea texto e imagen verticalmente al centro */
+    gap: 20px;           /* Ajusta este valor: menor número = más pegado al texto */
+    padding: 40px;
+    justify-content: center; /* Ayuda a que el conjunto se mantenga equilibrado */
+}
+
+.contenido-texto {
+    flex: 0 0 50%;      /* El texto ocupará exactamente el 50% del ancho */
+}
+
+.contenido-img {
+    flex: 1;
+}
+.contenido-img {
+ flex: 0 0 45%;      /* La imagen ocupará el 45%, acercándose al texto */
+    display: flex;
+    justify-content: flex-start; /* Alinea la imagen hacia el texto */
+}
+
+.contenido-img img {
+    width: 100%;        /* Se adaptará al contenedor, pero no se deformará */
+    height: auto;       /* Mantiene la proporción original de tu foto */
+    border-radius: 10px;
+}
+
+.tarjetas {
+    display: flex;             /* Activa el diseño en fila */
+    justify-content: space-around; /* Distribuye el espacio entre ellas */
+    gap: 20px;                 /* Espacio entre cada tarjeta */
+    padding: 20px;
+    flex-wrap: wrap;           /* Permite que se acomoden si la pantalla es pequeña */
+}
+
+.tarjeta {
+    flex: 1;                   /* Hace que todas tengan el mismo ancho */
+    text-align: center;
+    max-width: 300px;          /* Ajusta este tamaño según prefieras */
+}
+
+.tarjeta img {
+    width: 100%;               /* La imagen ocupará el ancho de su tarjeta */
+    height: 200px;             /* Define una altura fija para uniformidad */
+    object-fit: cover;         /* Evita que la imagen se deforme */
+    border-radius: 10px;
+}
+
+.titulo-instalaciones {
+    flex: 0 0 100%;        /* Obliga al título a ocupar el 100% del ancho */
+    text-align: center;    /* Centra el texto */
+    margin-bottom: 20px;   /* Separación entre el título y las tarjetas */
+}
+
+h2 {
+    text-align: center;
+    
+}
+
+p {
+    margin: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    border: 1px solid #ddd;      /* Línea divisoria suave */
+    border-radius: 8px;          /* Esquinas redondeadas */
+    padding: 20px;               /* Espacio interno */
+    margin: 20px 0;              /* Espacio exterior entre secciones */
+    background-color: #f9f9f9;   /* Fondo gris muy claro para diferenciar */
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1); /* Efecto de profundidad */
+}
+
