@@ -1,4 +1,4 @@
-# 🏫 Página Web Oficial - Colegio Nuevo Horizonte
+# 🏫 Página Web Oficial - Colegio los angeles azules
 
 ¡Bienvenido al repositorio del proyecto **Página Web Colegio Nuevo Horizonte**! Este sitio web institucional ha sido diseñado y desarrollado con el objetivo de brindar una experiencia accesible, informativa e interactiva a toda la comunidad educativa (estudiantes, docentes, padres de familia y aspirantes).
 
