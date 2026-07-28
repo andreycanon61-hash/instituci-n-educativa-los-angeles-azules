@@ -289,10 +289,78 @@ audio, video {
     z-index: 10; /* Asegura que el elemento resaltado se vea por encima de otros */
 }
 
+.service-highlight {
+    display: grid;
+    grid-template-columns: minmax(230px, 0.8fr) minmax(0, 1.4fr);
+    align-items: center;
+    gap: 35px;
+    padding: 38px !important;
+    color: #ffffff;
+    background: linear-gradient(135deg, #035fea, #0d3f8f) !important;
+    box-shadow: 0 12px 28px rgba(3, 95, 234, 0.22);
+}
+
+.service-highlight h2 {
+    margin: 8px 0 14px;
+    font-size: clamp(1.6rem, 3vw, 2.3rem);
+}
+
+.service-highlight > div > p:last-child {
+    line-height: 1.6;
+}
+
+.eyebrow {
+    color: #ffc800;
+    font-size: 0.78rem;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.support-points {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.support-points article {
+    min-height: 170px;
+    padding: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.support-points span {
+    color: #ffc800;
+    font-weight: bold;
+}
+
+.support-points h3 {
+    margin: 14px 0 8px;
+    font-size: 1rem;
+}
+
+.support-points p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
 table, th, tr, td{
     border: 1px solid black;
 }
 
 table {
     margin: 20px;
+}
+
+@media (max-width: 768px) {
+    .service-highlight,
+    .support-points {
+        grid-template-columns: 1fr;
+    }
+
+    .service-highlight {
+        padding: 28px !important;
+    }
 }
